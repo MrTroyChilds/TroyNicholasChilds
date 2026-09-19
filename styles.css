@@ -147,44 +147,56 @@ a:hover {
   position: absolute;
   inset: 0;
   z-index: 0;
-  opacity: 0.09;
+  opacity: 0.85;
   background:
-    /* Stars field (canton) – top left */
-    radial-gradient(circle at 8% 12%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 14% 12%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 20% 12%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 26% 12%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 11% 18%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 17% 18%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 23% 18%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 8% 24%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 14% 24%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 20% 24%, #fff 1.2px, transparent 1.6px),
-    radial-gradient(circle at 26% 24%, #fff 1.2px, transparent 1.6px),
-    /* Blue canton base */
-    linear-gradient(90deg, #1a2a5a 0%, #1a2a5a 32%, transparent 32%),
-    /* Red & white stripes */
+    /* Larger stars field (canton) – top left */
+    radial-gradient(circle at 6% 10%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 12% 10%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 18% 10%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 24% 10%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 30% 10%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 9% 16%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 15% 16%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 21% 16%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 27% 16%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 6% 22%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 12% 22%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 18% 22%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 24% 22%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 30% 22%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 9% 28%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 15% 28%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 21% 28%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 27% 28%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 6% 34%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 12% 34%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 18% 34%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 24% 34%, #fff 2.5px, transparent 3.2px),
+    radial-gradient(circle at 30% 34%, #fff 2.5px, transparent 3.2px),
+    /* Blue canton base – larger */
+    linear-gradient(90deg, #0d1b4a 0%, #0d1b4a 36%, transparent 36%),
+    /* Larger red & white stripes */
     repeating-linear-gradient(
       180deg,
-      #8b1a1a 0px,
-      #8b1a1a 28px,
-      #e8e8e8 28px,
-      #e8e8e8 56px
+      #9b1c1c 0px,
+      #9b1c1c 42px,
+      #f0f0f0 42px,
+      #f0f0f0 84px
     );
   background-size: 100% 100%;
   pointer-events: none;
 }
 
-/* Soft vignette so content stays readable */
+/* Vignette kept lighter so the flag stays visible while text remains readable */
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 30% 40%, rgba(12, 12, 14, 0.55), transparent 70%),
-    linear-gradient(to right, rgba(12, 12, 14, 0.75) 0%, rgba(12, 12, 14, 0.35) 55%, rgba(12, 12, 14, 0.6) 100%),
-    radial-gradient(ellipse 80% 50% at 70% 20%, rgba(201, 162, 39, 0.07), transparent);
+    radial-gradient(ellipse 65% 55% at 28% 42%, rgba(12, 12, 14, 0.45), transparent 68%),
+    linear-gradient(to right, rgba(12, 12, 14, 0.55) 0%, rgba(12, 12, 14, 0.2) 50%, rgba(12, 12, 14, 0.4) 100%),
+    radial-gradient(ellipse 80% 50% at 70% 20%, rgba(201, 162, 39, 0.06), transparent);
   pointer-events: none;
 }
 
