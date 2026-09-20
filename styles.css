@@ -138,31 +138,30 @@ a:hover {
   padding: calc(var(--header-h) + 3rem) 0 4rem;
   position: relative;
   overflow: hidden;
-  background: var(--bg);
+  background-color: #0c0c0e;
+  background-image: url('assets/flag-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* Real American flag background */
+/* Soft dark wash so text stays readable — no fake CSS flag */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 0;
-  background:
-    url('assets/flag-bg.jpg') center center / cover no-repeat;
-  opacity: 0.85;
+  background: linear-gradient(
+    to right,
+    rgba(12, 12, 14, 0.75) 0%,
+    rgba(12, 12, 14, 0.45) 40%,
+    rgba(12, 12, 14, 0.55) 100%
+  );
   pointer-events: none;
 }
 
-/* Lighter vignette — keep text readable without killing the flag */
 .hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background:
-    radial-gradient(ellipse 60% 50% at 30% 40%, rgba(12, 12, 14, 0.4), transparent 65%),
-    linear-gradient(to right, rgba(12, 12, 14, 0.55) 0%, rgba(12, 12, 14, 0.2) 45%, rgba(12, 12, 14, 0.4) 100%);
-  pointer-events: none;
+  display: none;
 }
 
 .hero .container {
