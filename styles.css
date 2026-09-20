@@ -148,20 +148,20 @@ a:hover {
   inset: 0;
   z-index: 0;
   background:
-    url('assets/flag-bg.jpg') center / cover no-repeat;
-  opacity: 0.55;
+    url('assets/flag-bg.jpg') center center / cover no-repeat;
+  opacity: 0.85;
   pointer-events: none;
 }
 
-/* Dark vignette so text and photo stay readable */
+/* Lighter vignette — keep text readable without killing the flag */
 .hero::after {
   content: '';
   position: absolute;
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse 65% 55% at 28% 42%, rgba(12, 12, 14, 0.55), transparent 70%),
-    linear-gradient(to right, rgba(12, 12, 14, 0.7) 0%, rgba(12, 12, 14, 0.35) 50%, rgba(12, 12, 14, 0.55) 100%);
+    radial-gradient(ellipse 60% 50% at 30% 40%, rgba(12, 12, 14, 0.4), transparent 65%),
+    linear-gradient(to right, rgba(12, 12, 14, 0.55) 0%, rgba(12, 12, 14, 0.2) 45%, rgba(12, 12, 14, 0.4) 100%);
   pointer-events: none;
 }
 
