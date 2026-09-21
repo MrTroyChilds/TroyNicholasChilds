@@ -169,7 +169,7 @@ a:hover {
   position: relative;
   overflow: hidden;
   background-color: #0c0c0e;
-  background-image: url("assets/american-flag.jpg");
+  background-image: url("assets/flag-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -182,9 +182,9 @@ a:hover {
   z-index: 0;
   background: linear-gradient(
     to right,
-    rgba(12, 12, 14, 0.72) 0%,
-    rgba(12, 12, 14, 0.38) 45%,
-    rgba(12, 12, 14, 0.55) 100%
+    rgba(12, 12, 14, 0.65) 0%,
+    rgba(12, 12, 14, 0.3) 45%,
+    rgba(12, 12, 14, 0.5) 100%
   );
   pointer-events: none;
 }
