@@ -168,11 +168,7 @@ a:hover {
   padding: calc(var(--header-h) + 3rem) 0 4rem;
   position: relative;
   overflow: hidden;
-  background-color: #0c0c0e;
-  background-image: url("assets/flag-bg.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: #0c0c0e url("assets/hero-flag.jpg") center center / cover no-repeat;
 }
 
 .hero::before {
@@ -181,17 +177,17 @@ a:hover {
   inset: 0;
   z-index: 0;
   background: linear-gradient(
-    to right,
-    rgba(12, 12, 14, 0.65) 0%,
-    rgba(12, 12, 14, 0.3) 45%,
-    rgba(12, 12, 14, 0.5) 100%
+    90deg,
+    rgba(12, 12, 14, 0.7) 0%,
+    rgba(12, 12, 14, 0.35) 50%,
+    rgba(12, 12, 14, 0.55) 100%
   );
   pointer-events: none;
 }
 
 .hero::after {
-  display: none !important;
   content: none;
+  display: none;
 }
 
 .hero .container {
