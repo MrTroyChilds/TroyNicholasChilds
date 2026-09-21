@@ -139,29 +139,29 @@ a:hover {
   position: relative;
   overflow: hidden;
   background-color: #0c0c0e;
-  background-image: url('assets/flag-bg.jpg');
+  background-image: url("assets/american-flag.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Soft dark wash so text stays readable — no fake CSS flag */
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   z-index: 0;
   background: linear-gradient(
     to right,
-    rgba(12, 12, 14, 0.75) 0%,
-    rgba(12, 12, 14, 0.45) 40%,
+    rgba(12, 12, 14, 0.72) 0%,
+    rgba(12, 12, 14, 0.38) 45%,
     rgba(12, 12, 14, 0.55) 100%
   );
   pointer-events: none;
 }
 
 .hero::after {
-  display: none;
+  display: none !important;
+  content: none;
 }
 
 .hero .container {
@@ -720,4 +720,14 @@ a:hover {
   .gallery {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* LinkedIn profile badge in contact */
+.linkedin-badge-wrap {
+  margin: 1rem 0 1.25rem;
+  min-height: 280px;
+}
+.linkedin-badge-wrap .LI-profile-badge {
+  max-width: 100%;
 }
