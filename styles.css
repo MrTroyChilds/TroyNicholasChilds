@@ -79,9 +79,12 @@ a:hover {
 
 .nav-inner {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  gap: 1rem;
 }
 
 .logo {
