@@ -12,7 +12,9 @@
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
   --max-width: 1120px;
+  --social-bar-h: 40px;
   --header-h: 72px;
+  --top-offset: calc(var(--social-bar-h) + var(--header-h));
 }
 
 *,
@@ -25,7 +27,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--header-h);
+  scroll-padding-top: var(--top-offset);
 }
 
 body {
@@ -59,6 +61,52 @@ a:hover {
 }
 
 /* ===== Header ===== */
+
+/* ===== Social bar ===== */
+.social-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 110;
+  height: var(--social-bar-h);
+  background: rgba(8, 8, 10, 0.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+.social-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 1.15rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.social-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+/* Push main header below social bar */
+.site-header {
+  top: var(--social-bar-h);
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -165,7 +213,7 @@ a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: calc(var(--header-h) + 3rem) 0 4rem;
+  padding: calc(var(--top-offset) + 3rem) 0 4rem;
   position: relative;
   overflow: hidden;
   background: #0c0c0e url("assets/hero-flag.jpg") center center / cover no-repeat;
@@ -674,7 +722,7 @@ a:hover {
   .nav {
     display: none;
     position: absolute;
-    top: var(--header-h);
+    top: var(--top-offset);
     left: 0;
     right: 0;
     background: rgba(12, 12, 14, 0.98);
@@ -694,6 +742,14 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  .social-bar-inner {
+    justify-content: center;
+  }
+  .social-links {
+    gap: 0.25rem 0.75rem;
+    font-size: 0.72rem;
+  }
+
   .certs-grid {
     grid-template-columns: repeat(2, 1fr);
   }
