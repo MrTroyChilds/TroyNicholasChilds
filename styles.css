@@ -1,3 +1,20 @@
+/* Self-hosted so the page does not depend on a third-party stylesheet. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("assets/fonts/playfair-display-latin.woff2") format("woff2");
+}
+
 /* ===== Base & Variables ===== */
 :root {
   --bg: #0c0c0e;
