@@ -6,9 +6,9 @@ This site exists to provide a clear, accurate, and current online presence.
 
 ## Live Site
 
-Once GitHub Pages is enabled, the site will be available at:
+The site is published at:
 
-**https://mrTroychilds.github.io/TroyNicholasChilds/**
+**https://www.troychilds.com/**
 
 ## Contents
 
