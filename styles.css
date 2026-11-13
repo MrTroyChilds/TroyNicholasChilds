@@ -37,6 +37,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* No response header can set frame-ancestors on GitHub Pages. */
+html.is-framed body {
+  display: none !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
