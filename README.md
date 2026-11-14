@@ -21,4 +21,4 @@ Once GitHub Pages is enabled, the site will be available at:
 
 ## Local Preview
 
-Open `index.html` in a browser, or serve the folder with any static file server.
+Serve the folder with any static file server and open it over `http://localhost`. The page content security policy does not load styles or fonts from a `file://` URL.
