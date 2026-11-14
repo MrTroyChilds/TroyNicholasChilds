@@ -37,6 +37,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* GitHub Pages cannot send frame-ancestors. Hide the page if it is framed. */
+html.is-framed body {
+  display: none !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
